@@ -19,7 +19,9 @@ nav a {
     color: #000408;
     margin: 0 10px;
 }
-
+nav a:hover {
+    color: white;
+}
 main {
     padding: 20px;
     max-width: 1200px;
@@ -50,28 +52,6 @@ article {
     margin-bottom: 30px;
 }
 
-article ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
-}
-
-article ul li {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 6px;
-    flex: 1 1 calc(33.333% - 20px); 
-    min-width: 280px; 
-    box-sizing: border-box; 
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
 @media (max-width: 900px) {
     article ul li {
         flex: 1 1 calc(50% - 20px);
@@ -84,22 +64,6 @@ article ul li {
         flex: 1 1 100%;
         min-width: unset;
     }
-}
-
-article ul li img {
-    display: block;
-    width: 100%; 
-    height: auto;
-    max-height: 200px; 
-    object-fit: cover; 
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-article ul li p {
-    margin: 0 0 10px 0;
-    font-size: 1em;
-    font-weight: bold;
 }
 
 footer {
