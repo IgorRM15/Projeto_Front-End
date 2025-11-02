@@ -1,0 +1,138 @@
+/* ====== ESTILO GERAL ====== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #faf8f6;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #7a3e2b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* ====== FORMULÁRIO ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fdfcfb;
+}
+
+legend {
+  font-weight: 600;
+  color: #7a3e2b;
+  padding: 0 8px;
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #b86b44;
+  box-shadow: 0 0 0 3px rgba(184, 107, 68, 0.2);
+  outline: none;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #b86b44;
+  transform: scale(1.1);
+  margin-right: 8px;
+}
+
+
+button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #944f30;
+  transform: translateY(-2px);
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+  margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+  background-color: #b0b0b0;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
