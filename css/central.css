@@ -1,103 +1,101 @@
 body {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
+    color: #3b2f2f;
+    background-color: #f5f2ec;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Cabeçalho */
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #fff;
-    border-bottom: 2px solid #ccc;
+    background: linear-gradient(to right, #8b6b4a, #c6a87b, #e3d2b3);
+    color: #fff;
+    border-bottom: 2px solid #d3bfa6;
 }
 
+/* Navegação */
 nav a {
     text-decoration: none;
-    color: #000408;
+    color: #fff;
+    font-weight: 500;
     margin: 0 10px;
+    transition: color 0.3s ease;
 }
+
 nav a:hover {
-    color: white;
+    color: #f1e4c8;
 }
+
+/* Conteúdo principal */
 main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+    flex: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
-    color: #333;
+    color: #6d4026;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: #ccc;
+    background-color: #d3bfa6;
     margin: 30px 0;
 }
 
+/* Seções */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid #e4d6c5;
+    background-color: #fffdf8;
     border-radius: 8px;
 }
 
+/* Artigos e depoimentos */
 article {
     margin-bottom: 30px;
 }
 
-@media (max-width: 900px) {
-    article ul li {
-        flex: 1 1 calc(50% - 20px);
-        min-width: 300px; 
-    }
-}
-
-@media (max-width: 600px) {
-    article ul li {
-        flex: 1 1 100%;
-        min-width: unset;
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
-} 
 .galeria-depoimentos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .depoimento {
-    flex: 1 1 370px; 
+    flex: 1 1 370px;
     max-width: 370px;
-    
     margin: 20px 0;
     padding-bottom: 15px;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 6px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
     overflow: hidden;
 }
 
 .depoimento h3 {
     text-align: center;
     margin: 0;
+    color: #5a3722;
 }
 
 .depoimento img {
@@ -105,5 +103,16 @@ footer {
     height: 250px;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #8b6b4a, #c6a87b, #e3d2b3);
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }

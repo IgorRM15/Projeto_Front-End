@@ -21,124 +21,126 @@
       <a href="depoimento.html">Depoimento</a> |
       <a href="eventos.html">Eventos</a> |
       <a href="orcamento.html">Orçamento</a> |
-      <a href="contato.html">Contato</a> |
+      <a href="contato.html">Contato</a> 
     </nav>
-    <hr>
+ 
   </header>
-    
-    <hr>
 
-    <main>
-        <h1>Orçamento</h1>
-        <p>Preencha o formulário com as informações do seu evento. Campos com <strong>*</strong> são obrigatórios.</p>
 
-        <form action="/como vai receber o submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
-            <fieldset>
-                <legend>Dados do Solicitante</legend>
 
-                <label for="nome">Nome completo <strong>*</strong></label><br>
-                <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required><br><br>
+  <main>
+    <h1>Orçamento</h1>
+    <p>Preencha o formulário com as informações do seu evento. Campos com <strong>*</strong> são obrigatórios.</p>
 
-                <label for="email">E-mail <strong>*</strong></label><br>
-                <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required><br><br>
+    <form action="/como vai receber o submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>Dados do Solicitante</legend>
 
-                <label for="telefone">Telefone / WhatsApp <strong>*</strong></label><br>
-                <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 91234-5678"
-                       pattern="^\+?\d{8,20}$" title="Digite apenas números, com DDD, ex: +5511912345678" required><br><br>
-            </fieldset>
+        <label for="nome">Nome completo <strong>*</strong></label><br>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required><br><br>
 
-            <fieldset>
-                <legend>Informações do Evento</legend>
+        <label for="email">E-mail <strong>*</strong></label><br>
+        <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required><br><br>
 
-                <label for="tipo">Tipo de evento <strong>*</strong></label><br>
-                <select id="tipo" name="tipo" required>
-                    <option value="">-- selecione --</option>
-                    <option value="casamento">Casamento</option>
-                    <option value="aniversario">Aniversário</option>
-                    <option value="corporativo">Evento Corporativo</option>
-                    <option value="formatura">Formatura</option>
-                    <option value="cha_bodas">Chá / Bodas</option>
-                    <option value="outros">Outros</option>
-                </select><br><br>
+        <label for="telefone">Telefone / WhatsApp <strong>*</strong></label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 91234-5678" pattern="^\+?\d{8,20}$"
+          title="Digite apenas números, com DDD, ex: +5511912345678" required><br><br>
+      </fieldset>
 
-                <label for="data">Data do evento <strong>*</strong></label><br>
-                <input type="date" id="data" name="data" required><br><br>
+      <fieldset>
+        <legend>Informações do Evento</legend>
 
-                <label for="hora_inicio">Hora de início</label><br>
-                <input type="time" id="hora_inicio" name="hora_inicio"><br><br>
+        <label for="tipo">Tipo de evento <strong>*</strong></label><br>
+        <select id="tipo" name="tipo" required>
+          <option value="">-- selecione --</option>
+          <option value="casamento">Casamento</option>
+          <option value="aniversario">Aniversário</option>
+          <option value="corporativo">Evento Corporativo</option>
+          <option value="formatura">Formatura</option>
+          <option value="cha_bodas">Chá / Bodas</option>
+          <option value="outros">Outros</option>
+        </select><br><br>
 
-                <label for="convidados">Número estimado de convidados <strong>*</strong></label><br>
-                <input type="number" id="convidados" name="convidados" min="1" step="1" placeholder="Ex: 120" required><br><br>
+        <label for="data">Data do evento <strong>*</strong></label><br>
+        <input type="date" id="data" name="data" required><br><br>
 
-                <label for="local">Local / Endereço do evento</label><br>
-                <input type="text" id="local" name="local" placeholder="Ex: Salão XYZ, Rua ABC, 123"><br><br>
-            </fieldset>
+        <label for="hora_inicio">Hora de início</label><br>
+        <input type="time" id="hora_inicio" name="hora_inicio"><br><br>
 
-            <fieldset>
-                <legend>Serviços desejados</legend>
+        <label for="convidados">Número estimado de convidados <strong>*</strong></label><br>
+        <input type="number" id="convidados" name="convidados" min="1" step="1" placeholder="Ex: 120" required><br><br>
 
-                <p>Marque os serviços que deseja incluir:</p>
+        <label for="local">Local / Endereço do evento</label><br>
+        <input type="text" id="local" name="local" placeholder="Ex: Salão XYZ, Rua ABC, 123"><br><br>
+      </fieldset>
 
-                <input type="checkbox" id="serv_prato" name="servicos[]" value="servico_prato">
-                <label for="serv_prato">Serviço de buffet (pratos principais)</label><br>
+      <fieldset>
+        <legend>Serviços desejados</legend>
 
-                <input type="checkbox" id="serv_coquetel" name="servicos[]" value="coquetel">
-                <label for="serv_coquetel">Coquetel</label><br>
+        <p>Marque os serviços que deseja incluir:</p>
 
-                <input type="checkbox" id="serv_bebidas" name="servicos[]" value="bebidas">
-                <label for="serv_bebidas">Bebidas</label><br>
+        <input type="checkbox" id="serv_prato" name="servicos[]" value="servico_prato">
+        <label for="serv_prato">Serviço de buffet (pratos principais)</label><br>
 
-                <input type="checkbox" id="serv_decor" name="servicos[]" value="decoracao">
-                <label for="serv_decor">Decoração</label><br>
+        <input type="checkbox" id="serv_coquetel" name="servicos[]" value="coquetel">
+        <label for="serv_coquetel">Coquetel</label><br>
 
-                <input type="checkbox" id="serv_equipa" name="servicos[]" value="equipe_servico">
-                <label for="serv_equipa">Equipe de serviço (garçons)</label><br>
+        <input type="checkbox" id="serv_bebidas" name="servicos[]" value="bebidas">
+        <label for="serv_bebidas">Bebidas</label><br>
 
-                <input type="checkbox" id="serv_doces" name="servicos[]" value="doces_bolo">
-                <label for="serv_doces">Bolo / Doces</label><br>
+        <input type="checkbox" id="serv_decor" name="servicos[]" value="decoracao">
+        <label for="serv_decor">Decoração</label><br>
 
-                <input type="checkbox" id="serv_outros" name="servicos[]" value="outros">
-                <label for="serv_outros">Outros (descrever abaixo)</label><br><br>
-            </fieldset>
+        <input type="checkbox" id="serv_equipa" name="servicos[]" value="equipe_servico">
+        <label for="serv_equipa">Equipe de serviço (garçons)</label><br>
 
-            <fieldset>
-                <legend>Preferências de cardápio</legend>
+        <input type="checkbox" id="serv_doces" name="servicos[]" value="doces_bolo">
+        <label for="serv_doces">Bolo / Doces</label><br>
 
-                <label for="cardapio">Opções/observações (ex: vegetariano, intolerância, preferência por pratos)</label><br>
-                <textarea id="cardapio" name="cardapio" rows="4" placeholder="Descreva preferências alimentares, restrições, etc."></textarea><br><br>
-            </fieldset>
+        <input type="checkbox" id="serv_outros" name="servicos[]" value="outros">
+        <label for="serv_outros">Outros (descrever abaixo)</label><br><br>
+      </fieldset>
 
-            <fieldset>
-                <legend>Faixa de orçamento (opcional)</legend>
+      <fieldset>
+        <legend>Preferências de cardápio</legend>
 
-                <input type="radio" id="orc1" name="orcamento" value="ate_3000">
-                <label for="orc1">até R$ 3.000</label><br>
+        <label for="cardapio">Opções/observações (ex: vegetariano, intolerância, preferência por pratos)</label><br>
+        <textarea id="cardapio" name="cardapio" rows="4"
+          placeholder="Descreva preferências alimentares, restrições, etc."></textarea><br><br>
+      </fieldset>
 
-                <input type="radio" id="orc2" name="orcamento" value="3000_7000">
-                <label for="orc2">R$ 3.000 — R$ 7.000</label><br>
+      <fieldset>
+        <legend>Faixa de orçamento (opcional)</legend>
 
-                <input type="radio" id="orc3" name="orcamento" value="7000_15000">
-                <label for="orc3">R$ 7.000 — R$ 15.000</label><br>
+        <input type="radio" id="orc1" name="orcamento" value="ate_3000">
+        <label for="orc1">até R$ 3.000</label><br>
 
-                <input type="radio" id="orc4" name="orcamento" value="mais_15000">
-                <label for="orc4">mais de R$ 15.000</label><br><br>
-            </fieldset>
+        <input type="radio" id="orc2" name="orcamento" value="3000_7000">
+        <label for="orc2">R$ 3.000 — R$ 7.000</label><br>
 
-            <fieldset>
-                <legend>Mensagem / Observações</legend>
-                <label for="mensagem">Messagem adicional</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Nos conte mais sobre o seu evento..."></textarea><br><br>
-            </fieldset>
+        <input type="radio" id="orc3" name="orcamento" value="7000_15000">
+        <label for="orc3">R$ 7.000 — R$ 15.000</label><br>
 
-            <p>
-                <button type="submit">Enviar solicitação</button>
-                <button type="reset">Limpar formulário</button>
-            </p>
-        </form>
-    </main>
+        <input type="radio" id="orc4" name="orcamento" value="mais_15000">
+        <label for="orc4">mais de R$ 15.000</label><br><br>
+      </fieldset>
 
-    <hr>
-    <footer>
+      <fieldset>
+        <legend>Mensagem / Observações</legend>
+        <label for="mensagem">Messagem adicional</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5"
+          placeholder="Nos conte mais sobre o seu evento..."></textarea><br><br>
+      </fieldset>
+
+      <p>
+        <button type="submit">Enviar solicitação</button>
+        <button type="reset">Limpar formulário</button>
+      </p>
+    </form>
+  </main>
+
+  <hr>
+  <footer>
     <p>© 2025 - BW Buffet. Todos os direitos reservados.</p>
     <p>Siga-nos nas redes sociais:</p>
     <p>

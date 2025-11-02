@@ -4,7 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f8f8;
+   
 }
 
 header {
@@ -12,13 +12,16 @@ header {
     padding: 20px 0;
     background-color: #fff;
     border-bottom: 2px solid #ccc;
+    
 }
 
 nav a {
     text-decoration: none;
-    color: #000408;
+    color: #ffffff;
     margin: 0 10px;
+    
 }
+
 
 main {
     padding: 20px;
@@ -27,8 +30,10 @@ main {
 }
 
 h1, h2, h3 {
-    text-align: center;
-    color: #333;
+  text-align: center;
+  color: #7a3e2b;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -102,10 +107,3 @@ article ul li p {
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    background-color: #fff;
-    margin-top: 20px;
-} 
