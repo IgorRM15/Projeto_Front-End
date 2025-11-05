@@ -6,53 +6,35 @@
   margin: 30px auto;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.carousel-slide {
-  display: none;
+.slides {
+  display: flex;
+  width: 300%; 
+  animation: slide 12s infinite;
+  align-items: stretch;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3); 
+  max-width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
+.slide img {
   width: 100%;
-}
-
-.carousel-slide.active {
+  height: 450px; 
+  object-fit: cover; 
   display: block;
 }
 
-.carousel-slide img {
-  width: 100%;
-  height: auto;           
-  object-fit: contain;    
-  display: block;
-}
-
-/* SETAS */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 24px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-container:hover .carousel-btn {
-  opacity: 1;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-/* BOLINHAS */
-.carousel-dots {
+.dots {
   text-align: center;
   position: absolute;
   bottom: 15px;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .dot {
@@ -66,6 +48,20 @@
   transition: background-color 0.3s;
 }
 
-.dot.active {
-  background-color: #cfa416;
+
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(0%); }
+
+  30%  { transform: translateX(-33.333%); }
+  55%  { transform: translateX(-33.333%); }
+
+  60%  { transform: translateX(-66.666%); }
+  100% { transform: translateX(-66.666%); }
+}
+
+
+.carousel-container:hover .slides {
+  animation-play-state: paused;
 }
