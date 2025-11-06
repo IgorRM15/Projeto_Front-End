@@ -41,7 +41,6 @@ nav a:hover {
     color: #f1e4c8;
 }
 
-/* Conteúdo principal */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -75,7 +74,11 @@ section {
 }
 
 article {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 1px;
 }
 
 .galeria-depoimentos {
@@ -88,30 +91,40 @@ article {
     margin: 0 auto;
 }
 
+.depoimento main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
 .depoimento {
-    flex: 1 1 370px;
-    max-width: 370px;
-    margin: 20px 0;
-    padding-bottom: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    overflow: hidden;
+    flex: 0 1 300px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .depoimento h3 {
     text-align: center;
-    margin: 0;
-    color: #5a3722;
+    color: #7a3e2b;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .depoimento img {
-    width: 100%;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 12px;
     display: block;
-    border-radius: 6px 6px 0 0;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .contato-section {
     margin: 0;
@@ -152,18 +165,12 @@ article {
     transition: color 0.3s;
 }
 
-.card-contato a:hover {
-    color: #6d4026;
-    text-decoration: underline;
-}
-
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     margin-top: 30px;
-  
 }
 
 .card-evento {
@@ -173,12 +180,7 @@ article {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 2px 8px rgba(240, 238, 238, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 6px 6px 0 0;
 }
-
-
-
 
 .card-evento h3 {
     color: #6d4026;
