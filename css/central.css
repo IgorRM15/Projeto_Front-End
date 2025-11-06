@@ -113,95 +113,93 @@ article {
     border-radius: 6px 6px 0 0;
 }
 
-.contato-section{
-    margin: 0 ;
-    padding: 20px  ;    
-    border: none;         
-    border-radius: 0;      
-    background: transparent; 
+.contato-section {
+    margin: 0;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
 }
-    
-.card-contato{
+
+.card-contato {
     background-color: #fffdf8;
     padding: 60px 40px;
     text-align: center;
-    border-radius: 10px;           
-    width: 100%;                   
-    max-width: 100%;               
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 
 .card-contato h3 {
-    color: #6d4026;           
-    font-size: 2.5rem;        
-    margin-bottom: 30px;      
+    color: #6d4026;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .card-contato p {
-    font-size: 1.1rem;        
-    margin: 15px 0;           
-    color: #3b2f2f;           
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #3b2f2f;
 }
 
 .card-contato a {
-    color: #8b6b4a;          
-    text-decoration: none;    
-    font-weight: 600;         
-    transition: color 0.3s;   
+    color: #8b6b4a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 .card-contato a:hover {
-    color: #6d4026;           
-    text-decoration: underline; 
+    color: #6d4026;
+    text-decoration: underline;
 }
 
-.cards-container{
-    display: flex;              
-    flex-wrap: wrap;            
-    gap: 25px;                  
-    justify-content: center;    
-    margin-top: 30px;          
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+  
 }
 
 .card-evento {
-    flex: 1 1 280px;            
-    max-width: 350px;           
-    background-color: #ffffff;                                              
-    border-radius: 10px;         
-    padding: 30px;              
-    box-shadow: 0 2px 8px rgba(240, 238, 238, 0.08); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    flex: 1 1 280px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(240, 238, 238, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px 6px 0 0;
 }
 
 
-.card-evento:hover {
-    transform: translateY(-8px);  
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
-}
 
 
 .card-evento h3 {
-    color: #6d4026;             
-    font-size: 1.5rem;          
-    margin-bottom: 15px;        
-    text-align: left;           
-    border-bottom: 2px solid #d3bfa6; 
-    padding-bottom: 10px;       
+    color: #6d4026;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid #d3bfa6;
+    padding-bottom: 10px;
 }
 
 .card-evento p {
-    color: #3b2f2f;             
-    font-size: 1rem;            
-    line-height: 1.6;          
-    margin-bottom: 15px;        
+    color: #3b2f2f;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .card-evento ul {
-    list-style: none;           
-    padding-left: 0;            
-    margin: 0;                  
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 
