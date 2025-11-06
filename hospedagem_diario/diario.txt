@@ -1,0 +1,76 @@
+---- 14 de setembro
+
+Início do projeto.
+
+Sugestões iniciais foram apresentadas por Davi e Alana para direcionar o desenvolvimento do trabalho.
+
+---- 18 de setembro
+
+O grupo se reuniu para definir o tema do projeto e discutir ideias de estrutura e conteúdo.
+
+---- 20 de setembro
+
+Alana realizou a entrevista com os donos do BW Buffet, coletando informações importantes sobre o negócio.
+
+Definição dos principais componentes e funcionalidades do site.
+
+Distribuição de tarefas entre os membros:
+
+Igor: estrutura base em HTML, criação do projeto no GitHub e liderança/auxílio do grupo.
+
+Matheus: seção de depoimentos.
+
+Davi: página de cardápio.
+
+Alana: homepage.
+
+Eduardo: página de eventos.
+
+Enzo: responsável pelo contato e comunicação com o cliente.
+
+Gabriel: padronização do CSS geral e auxílio no cardápio.
+
+Bruno: página de orçamento.
+
+João: responsável pela elaboração e atualização do diário de bordo e auxílio do grupo.
+
+---- 28 de setembro
+
+Igor iniciou a estruturação das primeiras páginas HTML.
+
+Matheus começou a desenvolver a área de depoimentos e o carrossel de imagens.
+
+Davi preparou os primeiros rascunhos da página de cardápio.
+
+O grupo alinhou o design e as cores principais do site.
+
+---- 4 de outubro
+
+Igor estruturou as pastas de imagens e ajustou a hierarquia dos arquivos.
+
+Matheus finalizou o logotipo e aprimorou o carrossel.
+
+Davi e Alana atualizaram arquivos e páginas com novos conteúdos.
+
+Eduardo adicionou a seção de eventos.
+
+O grupo reorganizou o repositório e aprimorou a legibilidade do código.
+
+Cada página recebeu atualizações visuais e estruturais.
+
+---- 12 de outubro
+
+João atualizou o diário de bordo com as atividades recentes do grupo.
+
+Igor e Gabriel revisaram o HTML e ajustaram pequenos erros de estilo.
+
+Matheus e Davi trabalharam na melhoria do CSS, buscando padronizar o visual do site.
+
+O grupo começou a discutir a finalização do layout e os ajustes finais antes da entrega.
+
+---- 3 a 6 de novembro
+
+Na etapa final do projeto, foram adicionados CSS próprios para algumas páginas e novas imagens.
+Foi adicionado o orçamento da hospedagem escolhida.
+Após revisões e discussões em grupo, o CSS foi aprimorado, e Igor concluiu os ajustes de estilo e organização.
+O site foi revisado e finalizado com sucesso, encerrando o ciclo de desenvolvimento.
